@@ -1,0 +1,23 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "StashDBClient",
+      "url": "https://stashdb.org/graphql",
+      "records": {
+        "inputs": false,
+        "entities": false
+      },
+      "transportProfiles": [
+        {
+          "default": "Http",
+          "subscription": "WebSocket"
+        }
+      ]
+    }
+  },
+  "scalars": {
+    "URL": "String" // Map URL to String to avoid conflicts
+  }
+}

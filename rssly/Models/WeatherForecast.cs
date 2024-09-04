@@ -1,4 +1,4 @@
-namespace rssly
+namespace RSSly.Backend.Models
 {
     public class WeatherForecast
     {

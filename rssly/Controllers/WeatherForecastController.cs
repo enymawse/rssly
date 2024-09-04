@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using RSSly.Backend.Models;
 
-namespace rssly.Controllers
+namespace RSSly.Backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]

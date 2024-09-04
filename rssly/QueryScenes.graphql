@@ -1,0 +1,17 @@
+query QueryScenes($favorites: FavoriteFilter!, $page_size: Int!, $page_number: Int!) {
+    queryScenes(
+        input: { sort: DATE, direction: DESC, favorites: $favorites, per_page: $page_size, page: $page_numer }
+    ) {
+        scenes {
+            id
+            title
+            performers {
+                performer {
+                    name
+                }
+            }
+            release_date
+        }
+        count
+    }
+}
